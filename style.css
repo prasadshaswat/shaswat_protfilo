@@ -11,47 +11,32 @@
     scroll-snap-type: y mandatory;
 }
 
-@media only screen and (max-width: 768px) {
-    .menu {
-        display: none;
-        /* Hide the menu by default */
-        flex-direction: column;
-        /* Display menu items vertically */
-        background-color: #333;
-        /* Background color for the mobile menu */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        padding: 5rem 0;
-        z-index: 10;
-        /* Ensure the menu is on top */
-    }
 
-    .menu li {
-        text-align: center;
-        margin-bottom: 1rem;
-    }
 
-    .menu li a {
-        color: white;
-        font-size: 2rem;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-
-    .menu li a:hover {
-        color: #00ffee;
-    }
-
-    #menu-icon {
-        display: block;
-        /* Show the hamburger icon */
-        font-size: 2rem;
-        cursor: pointer;
-    }
+/* Media query for phones */
+.menu li {
+    text-align: center;
+    margin-bottom: 1rem;
 }
+
+.menu li a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #00ffee;
+}
+
+#menu-icon {
+    display: block;
+    /* Show the hamburger icon */
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 
 /* Styling for larger screens */
 .menu {

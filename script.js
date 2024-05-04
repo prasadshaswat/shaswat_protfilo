@@ -2,14 +2,7 @@ const menuIcon = document.getElementById('menu-icon');
 const navbar = document.querySelector('.navbar');
 const menu = document.querySelector('.menu');
 
-menuIcon.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-    if (navbar.classList.contains('active')) {
-        menu.style.display = 'block';
-    } else {
-        menu.style.display = 'none';
-    }
-});
+
 
 function animateSkills() {
     const skillsBars = document.querySelectorAll('.skills-bar span');
